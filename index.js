@@ -11,6 +11,7 @@ const allowedOrigins = [
   "http://localhost:8080",
   "http://localhost:8101",
   "http://localhost:8100",
+  "https://bucket-bliss-8484522aca2f.herokuapp.com"
 ];
 
 // Reflect the origin if it's in the allowed list or not defined (cURL, Postman, etc.)
