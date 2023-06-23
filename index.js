@@ -10,7 +10,13 @@ if (process.env.NODE_ENV !== "production") {
 
 mongoose.connect(process.env.URI, { useNewUrlParser: true }).then(() => {
   const app = express();
-  app.use(cors())
+  app.use(express.json());
+
+  app.use(
+    cors({
+      origin: "*",
+    })
+  );
 
   app.use("/api", routes); // new
 
